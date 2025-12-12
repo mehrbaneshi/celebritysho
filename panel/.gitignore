@@ -1,23 +1,104 @@
-/.phpunit.cache
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
+####################################
+# OS / Editor
+####################################
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+####################################
+# Environment / Secrets
+####################################
 .env
-.env.backup
-.env.production
-.phpactor.json
+.env.*
+!.env.example
+
+####################################
+# Laravel (Panel & API)
+####################################
+/panel/vendor/
+/panel/node_modules/
+/panel/storage/logs/*
+/panel/storage/framework/cache/*
+/panel/storage/framework/sessions/*
+/panel/storage/framework/views/*
+!/panel/storage/.gitignore
+
+/api/vendor/
+/api/node_modules/
+/api/storage/logs/*
+/api/storage/framework/cache/*
+/api/storage/framework/sessions/*
+/api/storage/framework/views/*
+!/api/storage/.gitignore
+
+####################################
+# Laravel build artifacts
+####################################
+/panel/public/storage
+/api/public/storage
+/panel/bootstrap/cache/*
+/api/bootstrap/cache/*
+
+####################################
+# WordPress
+####################################
+/wp/wp-config.php
+/wp/.htaccess
+/wp/wp-content/cache/
+/wp/wp-content/uploads/*
+!/wp/wp-content/uploads/.gitignore
+
+/wp/wp-content/upgrade/
+/wp/wp-content/backups/
+/wp/wp-content/debug.log
+
+####################################
+# WordPress Plugins & Themes (Optional)
+# اگر خودت توسعه دادی، اینها رو کامنت کن
+####################################
+/wp/wp-content/plugins/*
+!/wp/wp-content/plugins/your-custom-plugin/
+
+/wp/wp-content/themes/*
+!/wp/wp-content/themes/your-custom-theme/
+
+####################################
+# Frontend (HTML/CSS/JS)
+####################################
+/frontend/dist/
+/frontend/node_modules/
+/frontend/.parcel-cache/
+/frontend/.vite/
+/frontend/.cache/
+
+####################################
+# Build / Temp
+####################################
+*.zip
+*.tar
+*.rar
+*.7z
+*.bak
+*.tmp
+
+####################################
+# Logs
+####################################
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+composer.log
+
+####################################
+# Tests / Coverage
+####################################
+/coverage/
 .phpunit.result.cache
-Homestead.json
-Homestead.yaml
-npm-debug.log
-yarn-error.log
-/auth.json
-/.fleet
-/.idea
-/.nova
-/.vscode
-/.zed
