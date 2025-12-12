@@ -1,0 +1,34 @@
+/* panel/assets/css/layout.css */
+.app-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar-container {
+  width: 240px;
+  background: #ffffff;
+  border-left: 1px solid #e5e7eb;
+}
+
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.app-content {
+  padding: 16px 24px 32px;
+}
+
+/* ریسپانسیو خیلی ساده */
+@media (max-width: 768px) {
+  .sidebar-container {
+    display: none; /* می‌تونی بعداً منوی موبایل بسازی */
+  }
+}

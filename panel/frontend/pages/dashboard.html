@@ -1,0 +1,140 @@
+<!-- panel/pages/dashboard.html -->
+<div class="page page-dashboard">
+  <!-- بنر خوش‌آمد -->
+  <section class="card card-welcome">
+    <div>
+      <h2 class="card-title">پیشخان</h2>
+      <p class="card-text">
+        خوش آمدید! در این بخش می‌توانید خلاصه‌ای از وضعیت تبلیغات، هزینه‌ها و همکاری با بلاگرها را ببینید.
+      </p>
+    </div>
+  </section>
+
+  <!-- بنر شروع تبلیغ -->
+  <section class="card card-start-ad">
+    <div class="card-start-overlay"></div>
+    <div class="card-start-content">
+      <h2 class="card-start-title">شروع ساخت تبلیغ</h2>
+      <p class="card-start-text">از اینجا کمپین تبلیغاتی خود را بسازید و اینفلوئنسر مناسب را انتخاب کنید.</p>
+      <div class="card-start-actions">
+        <button class="btn btn-light" data-route="create-ad-step1">شروع ساخت تبلیغ</button>
+        <button class="btn btn-ghost">ویدئوی راهنما</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="dashboard-grid">
+    <div class="dashboard-main">
+      <!-- همکاری با بهترین‌ها -->
+      <section class="card">
+        <div class="card-header">
+          <h3 class="card-title">همکاری با بهترین‌ها</h3>
+        </div>
+        <div class="best-grid">
+          <article class="best-item">
+            <div class="best-avatar">پ</div>
+            <div class="best-info">
+              <div class="best-name">پدرام کاظمی خیر آبادی</div>
+              <div class="best-id">@pedramkazemiiiii</div>
+              <div class="best-badge">بازدهی بالا</div>
+            </div>
+            <button class="btn btn-outline btn-small">همکاری با این ناشر</button>
+          </article>
+
+          <article class="best-item">
+            <div class="best-avatar">V3</div>
+            <div class="best-info">
+              <div class="best-name">Varzesh3 ورزش سه</div>
+              <div class="best-id">@varzesh3</div>
+              <div class="best-badge">پرفروش‌ترین</div>
+            </div>
+            <button class="btn btn-outline btn-small">همکاری با این ناشر</button>
+          </article>
+
+          <article class="best-item">
+            <div class="best-avatar">K</div>
+            <div class="best-info">
+              <div class="best-name">kamyar696</div>
+              <div class="best-id">@kamyar696</div>
+              <div class="best-badge">پیشنهاد سیستم</div>
+            </div>
+            <button class="btn btn-outline btn-small">همکاری با این ناشر</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- تبلیغات اخیر -->
+      <section class="card">
+        <div class="card-header">
+          <h3 class="card-title">تبلیغ‌های اخیر</h3>
+          <button class="btn-link">مشاهده همه ←</button>
+        </div>
+
+        <div class="recent-item">
+          <div>
+            <div className="recent-name">hotelpars</div>
+            <div class="recent-dates">
+              <span>۰۴ مهر ۱۴۰۲</span>
+              <span>تا</span>
+              <span>۰۶ مهر ۱۴۰۲</span>
+            </div>
+          </div>
+          <div class="recent-actions">
+            <span class="status status-done">اتمام تبلیغ</span>
+            <button class="btn btn-light btn-small">مشاهده گزارش</button>
+          </div>
+        </div>
+
+        <div class="recent-item">
+          <div>
+            <div className="recent-name">coffee_city</div>
+            <div class="recent-dates">
+              <span>۱۵ آبان ۱۴۰۲</span>
+              <span>تا</span>
+              <span>۱۸ آبان ۱۴۰۲</span>
+            </div>
+          </div>
+          <div class="recent-actions">
+            <span class="status status-running">در حال اجرا</span>
+            <button class="btn btn-light btn-small">مشاهده گزارش</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ساید ویجت‌ها -->
+    <div class="dashboard-side">
+      <section class="card card-credit">
+        <h3 class="card-title">الان بخر، بعداً پرداخت کن</h3>
+        <p class="card-text">پرداخت هزینه تبلیغ در ۴ قسط بدون کارمزد (دمو).</p>
+        <button class="btn btn-warning btn-full">دریافت اعتبار</button>
+      </section>
+
+      <section class="card">
+        <h3 class="card-title">سال ۱۴۰۴ در یک نگاه</h3>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-label">همه تبلیغ‌ها</div>
+            <div class="stat-value">۳</div>
+            <div class="stat-desc">تعداد کمپین‌ها</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">هزینه</div>
+            <div class="stat-value">۱۲,۵۰۰,۰۰۰ <span class="unit">تومان</span></div>
+            <div class="stat-desc">بدون مالیات</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">بازدید</div>
+            <div class="stat-value">۴۵۰,۰۰۰</div>
+            <div class="stat-desc">Impression</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">تعامل</div>
+            <div class="stat-value">۳۲,۴۰۰</div>
+            <div class="stat-desc">Engagement</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>

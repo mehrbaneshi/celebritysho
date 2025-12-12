@@ -1,0 +1,35 @@
+<!-- panel/index.html -->
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>ورود به پنل</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- فونت وزیرمتن -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body class="auth-body">
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-logo">تبلیغ‌چی</div>
+      <h1 class="auth-title">ورود به پنل</h1>
+      <p class="auth-subtitle">با شماره موبایل وارد شوید</p>
+
+      <form class="auth-form" onsubmit="event.preventDefault(); window.location.href='app.html';">
+        <label class="form-label">شماره موبایل</label>
+        <input type="tel" class="form-input" placeholder="مثال: 09123456789" required>
+
+        <label class="form-label">کد تایید (دمو)</label>
+        <input type="text" class="form-input" placeholder="کد پیامک‌شده (دمو)" required>
+
+        <button type="submit" class="btn btn-primary btn-full">ورود به پنل</button>
+      </form>
+
+      <p class="auth-hint">این صفحه فعلاً دمو است؛ بعداً به API احراز هویت لاراول وصل می‌شود.</p>
+    </div>
+  </div>
+</body>
+</html>

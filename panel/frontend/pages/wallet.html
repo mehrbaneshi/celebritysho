@@ -1,0 +1,67 @@
+<!-- panel/pages/wallet.html -->
+<div class="page page-wallet">
+  <section class="card">
+    <h2 class="card-title">گردش حساب و برداشت موجودی</h2>
+
+    <div class="wallet-summary">
+      <div class="wallet-box">
+        <div class="wallet-label">موجودی قابل برداشت</div>
+        <div class="wallet-value">8,750,000 <span class="unit">تومان</span></div>
+      </div>
+      <div class="wallet-box">
+        <div class="wallet-label">کل درآمد این ماه</div>
+        <div class="wallet-value">12,300,000 <span class="unit">تومان</span></div>
+      </div>
+    </div>
+
+    <div class="wallet-withdraw">
+      <h3 class="section-title">درخواست برداشت موجودی</h3>
+      <div class="form-row">
+        <div class="form-col">
+          <label class="form-label">مبلغ برداشت (تومان)</label>
+          <input type="text" class="form-input" placeholder="مثال: 5,000,000">
+        </div>
+        <div class="form-col">
+          <label class="form-label">شماره شبا / کارت (دمو)</label>
+          <input type="text" class="form-input" placeholder="مثال: ۶۲۷۴-۴۱۲۳-....">
+        </div>
+      </div>
+      <button class="btn btn-primary">ثبت درخواست برداشت</button>
+      <p class="hint-text">تسویه حساب‌ها (دمو) نهایتاً تا ۲ روز کاری انجام می‌شود.</p>
+    </div>
+
+    <div class="wallet-history">
+      <h3 class="section-title">گردش حساب</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>تاریخ</th>
+            <th>شرح</th>
+            <th>نوع</th>
+            <th>مبلغ (تومان)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>۱۴۰۴/۰۱/۲۰</td>
+            <td>درآمد از کمپین coffee_city</td>
+            <td class="text-success">واریز</td>
+            <td class="text-success">+3,500,000</td>
+          </tr>
+          <tr>
+            <td>۱۴۰۴/۰۱/۱۵</td>
+            <td>برداشت به کارت</td>
+            <td class="text-danger">برداشت</td>
+            <td class="text-danger">-2,000,000</td>
+          </tr>
+          <tr>
+            <td>۱۴۰۴/۰۱/۱۰</td>
+            <td>درآمد از کمپین hotelpars</td>
+            <td class="text-success">واریز</td>
+            <td class="text-success">+4,200,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,64 @@
+<!-- panel/pages/create-ad-step1.html -->
+<div class="page page-create-ad">
+  <div class="stepper">
+    <div class="step is-active">۱. اطلاعات اولیه</div>
+    <div class="step">۲. انتخاب ناشران</div>
+    <div class="step">۳. محتوای تبلیغ</div>
+    <div class="step">۴. پرداخت و فعال‌سازی</div>
+  </div>
+
+  <section class="card">
+    <h2 class="card-title center">می‌خواهید در کدام شبکه اجتماعی تبلیغ کنید؟</h2>
+
+    <div class="networks-grid">
+      <label class="network-option is-selected">
+        <span class="network-icon">📷</span>
+        <span>اینستاگرام</span>
+        <input type="radio" name="network" value="instagram" checked>
+      </label>
+
+      <label class="network-option">
+        <span class="network-icon">📨</span>
+        <span>تلگرام</span>
+        <input type="radio" name="network" value="telegram">
+      </label>
+    </div>
+
+    <div class="form-row">
+      <div class="form-col">
+        <label class="form-label">نوع محتوا</label>
+        <select class="form-input">
+          <option>پست / ریلز</option>
+          <option>استوری</option>
+        </select>
+      </div>
+
+      <div class="form-col">
+        <label class="form-label">نوع کمپین</label>
+        <select class="form-input">
+          <option>محتوای آماده دارم</option>
+          <option>تولید محتوا توسط اینفلوئنسر</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-col">
+        <label class="form-label">نام تبلیغ</label>
+        <input type="text" class="form-input" placeholder="مثال: کمپین معرفی محصول جدید">
+      </div>
+      <div class="form-col form-col-2">
+        <label class="form-label">بازه زمانی اجرای تبلیغ</label>
+        <div class="form-row">
+          <input type="text" class="form-input" placeholder="تاریخ شروع (مثال ۱۴۰۴/۰۱/۱۰)">
+          <input type="text" class="form-input" placeholder="تاریخ پایان (مثال ۱۴۰۴/۰۱/۱۵)">
+        </div>
+      </div>
+    </div>
+
+    <div class="wizard-footer">
+      <button class="btn btn-light" data-route="dashboard">انصراف</button>
+      <button class="btn btn-primary" data-route="create-ad-step2">مرحله بعد</button>
+    </div>
+  </section>
+</div>
